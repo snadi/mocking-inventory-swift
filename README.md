@@ -26,11 +26,16 @@ NOTE: you may want to open the project in xcode and work there if it's easier fo
     swift build
     ```
 
-3. Run the unit tests
+3. **Generate the mocks**: 
+    ```bash
+    bash generate_mocks.sh
+    ```
 
-```bash
-swift test --enable-code-coverage
-```
+4. Run the unit tests
+
+    ```bash
+    swift test --enable-code-coverage
+    ```
 
 ## Your Task
 
