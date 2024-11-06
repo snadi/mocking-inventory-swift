@@ -13,6 +13,8 @@ Before you begin, ensure you have the following installed on your machine:
 
 ## Building the code and Running the Unit tests
 
+NOTE: you may want to open the project in xcode and work there if it's easier for you. Follow whatever successful setup worked for you in your project.
+
 1. **Clone the Repository**: Clone the project to your local machine.
     ```bash
     git clone <repository-url>
@@ -29,16 +31,6 @@ Before you begin, ensure you have the following installed on your machine:
 ```bash
 swift test --enable-code-coverage
 ```
-
-4. Get a coverage report summary
-
-```
-xcrun llvm-cov report \
-    --instr-profile=.build/debug/codecov/default.profdata  \
-    --object .build/arm64-apple-macosx/debug/BankAccount.build/BankAccount.swift.o
-```
-
-This gives you a very ugly coverage summary on the terminal and for some reason doesn't detect the branches in the code. If you develop directly in xcode, there are probably better code coverage tools that have better visuals. Note that the started repo only has tests fro Product.
 
 ## Your Task
 
